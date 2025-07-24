@@ -1,0 +1,22 @@
+nohup: ignoring input
+ * Serving Flask app 'main'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://169.254.0.21:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 586-921-901
+127.0.0.1 - - [24/Jul/2025 19:13:27] "POST /api/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 19:13:33] "[35m[1mPOST /api/machines/generate-sample HTTP/1.1[0m" 201 -
+127.0.0.1 - - [24/Jul/2025 19:13:39] "GET /api/machines/ HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 19:13:44] "GET /api/analytics/dashboard-stats HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/maintai-backend/src/main.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/ubuntu/maintai-backend/src/main.py", line 47, in <module>
+    admin_user = User.query.filter_by(username='admin').first()
+                 ^^^^
+NameError: name 'User' is not defined
